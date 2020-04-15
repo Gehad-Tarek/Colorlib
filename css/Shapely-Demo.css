@@ -1,0 +1,752 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+ul{
+    padding: 0;
+}
+
+#myHeader{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 100;
+}
+#shapely-demo{
+    color: #666;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 20px 27% 20px 9%;
+    float: left;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + #part1-of-content{
+    padding-top: 100px;
+}
+.menu{
+    list-style: none; 
+}
+.menu > li{
+    color: #666;
+    font-size: 13px;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 30px;
+    margin-top: 10px;
+    line-height: 60px;
+    position: relative;
+}
+.menu > li :hover{
+    color: blue;
+}
+li > a{
+    text-decoration-line: none;
+    color: black;
+}
+li > i{
+    margin-left: 10px;
+    font-size: 10px;
+}
+li#dropdown-search-parent i{
+    margin-left: 100px;
+    font-size: 17px;
+    color: blue;
+}
+.dropdown1{
+    background-color: white;
+    margin-top: 0px;
+    list-style: none; 
+    position: absolute;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 1px 1px rgb(199, 199, 199), -1px -1px 1px 1px rgb(199, 199, 199);
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+.dropdown1 > li{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 6px;
+    line-height: 17px;
+    padding: 6px 16px;
+}
+ #dropdown1-parent:hover .dropdown1{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown1 > li :hover{
+    color: blue;
+    background-color: rgb(243, 240, 240);
+}
+li > a{
+    text-decoration-line: none;
+    color: black;
+}
+.dropdown2{
+    background-color: white;
+    margin-top: 0px;
+    list-style: none; 
+    position: absolute;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 1px rgb(199, 199, 199), -1px -1px 1px rgb(199, 199, 199);
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+.dropdown2 > li{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 6px;
+    line-height: 17px;
+    padding: 6px 16px;
+}
+ #dropdown2-parent:hover .dropdown2{
+    opacity: 1;
+    visibility: visible
+}
+.dropdown2 > li :hover{
+    color: blue;
+    background-color: rgb(243, 240, 240);
+}
+li > a{
+    text-decoration-line: none;
+    color: black;
+}
+.dropdown2 li>i{
+    float: right;
+}
+.level1-dropdown{
+    background-color: white;
+    margin-top: 0px;
+    list-style: none; 
+    position: absolute;
+    top: -1px;
+    left: 100%;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 1px rgb(199, 199, 199), -1px -1px 1px rgb(199, 199, 199);
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+.level1-dropdown > li{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 6px;
+    line-height: 17px;
+    padding: 6px 16px;
+
+}
+ #level1-dropdown-parent:hover .level1-dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+.level1-dropdown > li :hover{
+    color: blue;
+    background-color: rgb(243, 240, 240);
+}
+li > a{
+    text-decoration-line: none;
+    color: black;
+}
+.dropdown3{
+    background-color: white;
+    margin-top: 0px;
+    list-style: none; 
+    position: absolute;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 1px rgb(199, 199, 199), -1px -1px 1px rgb(199, 199, 199);
+    width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+.dropdown3 > li{
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 6px;
+    line-height: 17px;
+    padding: 6px 16px;
+}
+ #dropdown3-parent:hover .dropdown3{
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown3 > li :hover{
+    color: blue;
+    background-color: rgb(243, 240, 240);
+}
+li > a{
+    text-decoration-line: none;
+    color: black;
+}
+.dropdown-search{
+    background-color: white;
+    margin-top: 0px;
+    list-style: none; 
+    position: absolute;
+    right: 0px;
+    border: 1px solid #666;
+    box-shadow: 1px 1px 1px rgb(199, 199, 199), -1px -1px 1px rgb(199, 199, 199);
+    width: 240px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    float: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+#dropdown-search-parent:hover .dropdown-search{
+    opacity: 1;
+    visibility: visible;
+}
+#left-side-of-dropdown-search input{
+    width:58%;
+    float: left;
+    font-size: 17px;
+    margin: 10px 1% 10px 3%;
+    padding: 13px 10px ;
+}
+#right-side-of-dropdown-search button{
+    width: 33%;
+    float: right;
+    padding: 15px 0px;
+    margin: 10px 3% 10px 1%;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+}
+#part1-of-content{
+    padding-top: 5px;
+}
+.margin{
+    margin:0;
+}
+.space{
+    background: url("../photo/photo1.webp")
+    repeat fixed 100%;
+    background-size: 100% 100%;
+    height: 600px;
+}
+#inner-space{
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+#text1-of-part1{
+    color: white;
+    font-size: 60px;
+    line-height: 64px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 100;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#text2-of-part1{
+    color: #ebeef1;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 100;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#READ-button{
+    color: #ebeef1;
+    background-color: #745cf9;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 4%;
+    border: 1px solid #745cf9;
+    margin: 30px 2px 50px 33%;
+    text-decoration-line: none;
+    letter-spacing: 1px;
+}
+#READ-button:hover{
+    background-color: #7361da;
+}
+#Download-Now-button{
+    color: #ebeef1;
+    background-color: transparent;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 4%;
+    border: 2px solid #ebeef1;
+    margin: 30px 0px 30px 2px;
+    text-decoration-line: none;
+    letter-spacing: 1px;
+}
+#Download-Now-button:hover{
+    color: black;
+    background-color: #ebeef1;
+}
+/* part2 */
+#part2-of-content{
+    height: 650px;
+}
+#left-side-of-part2{
+    width: 40%;
+    float: left;
+}
+#photo2{
+    margin: 100px 20% ;
+    height: 450px;
+}
+#right-side-of-part2{
+    width: 45%;
+    float: right;
+    margin-left: 15%;
+}
+#text1-of-part2{
+    margin: 165px 20% 20px 20%;
+    font-size: 30px;
+    line-height: 33px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    color: #0e1015;
+}
+#text2-of-part2{
+    margin: 10px 23% 50px 20%;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    color: #8c979e;
+}
+#read-more-button{
+    color: white;
+    background-color: #745cf9;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px 9%;
+    border: 1px solid #745cf9;
+    margin: 10px 20% 50px 20%;
+    text-decoration-line: none;
+}
+#read-more-button:hover{
+    background-color: #7361da;
+}
+/* part3 */
+#part3-of-content{
+    height: 650px;
+    background-color: #f5f5f5;
+}
+#left-side-of-part3{
+    width: 40%;
+    float: left;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif; 
+}
+#text1-of-part3{
+    margin: 185px 20% 20px 23%;
+    font-size: 30px;
+    line-height: 33px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    color: #0e1015;
+}
+#text2-of-part3{
+    margin: 10px 12% 50px 23%;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    color: #8c979e;
+}
+#see-in-action-button{
+    text-decoration-line: none;
+    color: white;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    background-color: #745cf9;
+    padding: 20px 6%;
+    border: 1px solid #745cf9;
+    font-weight: 600;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif; 
+    margin: 10px 20% 50px 23%;
+}
+#see-in-action-button:hover{
+    background-color: #7361da;
+}
+#right-side-of-part3{
+    width: 50%;
+    float: left;
+}
+#photo3{
+    margin: 100px 7%;
+    width: 100%;
+    height: 450px;
+}
+/* part 4 */
+.Margin{
+    margin:0;
+}
+#SPACE{
+    background: url("../photo/photo4.jpg")
+    repeat fixed 100%;
+    background-size: 100% 100%;
+}
+#Inner-space{
+    padding-top: 12%;
+    padding-bottom: 12%;
+ }
+#text1-of-part4{
+    color: white;
+    font-size: 60px;
+    line-height: 64px;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#text2-of-part4{
+    color: #ebeef1;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    margin: 10px 18% 60px 18%;
+    font-weight: 100;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#more-info-button{
+    text-decoration-line: none;
+    color: white;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    background-color: #745cf9;
+    padding: 20px 6%;
+    border: 1px solid #745cf9;
+    font-weight: 600;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif; 
+    margin: 10px 20% 50px 40%;
+}
+#more-info-button:hover{
+    background-color: #7361da;
+}
+/* part 5 */
+#part5-of-content{
+    height: 1103px;
+    background-color: #f5f5f5;
+    padding-top: 80px;
+}
+#Limitless-options{
+    font-weight: 400;
+    color: #0e1015;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#paragraph-about-limitless{
+    color: #8c979e;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    margin: 25px 17%;
+    text-align: center;  
+}
+#seconed-download-button{
+    color: white;
+    background-color: #745cf9;
+    padding: 20px 5%;
+    margin: 0px 30% 30px 41%;
+    border: 1px solid #745cf9;
+    font-weight: 600px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;  
+}
+#seconed-download-button:hover{
+    background-color: #7361da;
+}
+#photo5-style{
+    width: 80%;
+    margin-left: 10%;
+}
+/* part 6 */
+#part6-of-content{
+    height: 230px;
+    background-color:  #0e1015;
+    padding-top: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#title1{
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+#title2{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+/* part 7 style */
+#part-7-of-content{
+    width: 100%;
+    height: 810px;
+    background-color: #0e1015; 
+}
+.hover-box{
+    width: 25%;
+    height: 270px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.hover-box img{
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+.hover-box div{
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+    opacity: 0; 
+}
+.hover-box a{
+    text-decoration-line: none;
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(40%,100%);
+    opacity:0;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.hover-box:hover div{
+    opacity: 0.4;
+}
+.hover-box:hover a{
+    opacity: 1;
+    color: white;
+    transform: translate(40%,45%);
+}
+
+
+
+
+.Space-Carousel{
+    height: 500px;
+    margin-top: 0px;
+    /* overflow: hidden; */
+    background: url("../photo/carousel-background.jpg")
+    no-repeat fixed 100%;
+    background-size: 100% 100%;
+    position: relative;
+}
+.Inner-Space{
+    padding-top: 1%;
+    padding-bottom: 30%;
+}
+/* .first-owl-carousel{
+    margin-left: 30%;
+} */
+/* .owl-carousel{
+    margin-left: 30%;
+} */
+#carousel1-title{
+    padding-top: 10px;
+    color: white;
+    font-size: 45px;
+    margin: 20px 20%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.caption1{
+    position: absolute;
+    transform: translate(0,0);
+    color: white;
+    font-size: 14px;
+    margin: 30px 23%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 20px;
+    text-align: center;
+}
+.customer-image{
+    position: absolute;
+    left: 45%;
+    top: 250px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.customer-name{
+    position: absolute;
+    left: 44%;
+    top: 360px;
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.wrapper2{
+    width: 80%;
+    height: auto;
+    margin: 30px 10%;
+    overflow: hidden;
+    background-color: white;
+    z-index: 2;
+}
+#carousel2-title{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item{
+    margin: 100px 37% 60px 37%;
+}
+.item img{
+    width: 10px;
+    height: 80px;
+    opacity: 0.5;
+}
+.item img:hover{
+    opacity: 1;
+}
+.owl-carousel{
+    width: 70%;
+}
+.owl-dots{
+    display: none;
+}
+/* before footer */
+#download-container{
+    height: 270px;
+    background-color: #f5f5f5;
+    margin: unset;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#paragraph-before-download-button{
+    color: #0e1015;
+    margin: 110px 12% 110px 15%;
+    font-size: 30px;
+    font-weight: 400;
+    float: left;
+}
+#last-download-button{
+    color: white;
+    background-color: #745cf9;
+    padding: 20px 5%;
+    margin: 90px 5% 90px 2%;
+    border: 1px solid #745cf9;
+    font-weight: 600px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+    float: left;
+}
+#last-download-button:hover{
+    background-color: #7361da;
+}
+/* footer */
+#footer{
+    height: 220px;
+    color: #eae6e6;
+    background-color:  #0e1015;
+    padding-top: 20px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#footer-paragraph{
+    width: 40%;
+    margin: 80px 0px 35px 5%;
+    font-size: 15px;
+    float: left;
+}
+#Colorlib{
+    color: #bebdc3;
+    font-weight: 600;
+    text-decoration-line: none;
+    transition: all 0.3s ease-in-out;   
+}
+#wordpress{
+    color: #bebdc3;
+    font-weight: 600;
+    text-decoration-line: none;
+    transition: all 0.3s ease-in-out;
+}
+#footer-font-awesome{
+    width: 50%;
+    margin: 80px 0px 35px 0px;
+    float: left;
+}
+#facebook{
+    color: white;
+    padding: 0px 1%;
+    margin: 0px 1% 0px 72%;
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+#twitter{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+#linkedin{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+#youtube{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+#instagram{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+    transition: all 0.3s ease-in-out;
+}
+#colorlib:hover, #wordpress:hover, #facebook:hover, #twitter:hover, #linkedin:hover, #youtube:hover, #instagram:hover{
+    color: #5144a0;
+}
+#scroll-to-button{
+    width: 3%;
+    height: 40px;
+    margin: 0px 0px 30px 95%;
+    padding-top: 5px;
+    color: #a4a3aa;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid #a4a3aa;
+}
+#scroll-to-button:hover{
+    color: white;
+    border-color: white;
+}

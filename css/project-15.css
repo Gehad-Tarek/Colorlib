@@ -1,0 +1,104 @@
+
+#project-15-container{
+    height: 225px;
+    background-color: #f5f5f5;
+}
+#project-15-container p{
+    font-size: 30px;
+    margin: 100px 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 180px;
+}
+
+/* footer */
+#footer{
+    height: 220px;
+    color: #eae6e6;
+    background-color:  #0e1015;
+    padding-top: 20px;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-serif;
+}
+#footer-paragraph{
+    width: 40%;
+    margin: 80px 0px 35px 5%;
+    font-size: 15px;
+    float: left;
+}
+#Colorlib{
+    color: #bebdc3;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+#colorlib:hover{
+    color: #5144a0;
+}
+#wordpress{
+    color: #bebdc3;
+    font-weight: 600;
+    text-decoration-line: none;
+}
+#wordpress:hover{
+    color: #5144a0;
+}
+#footer-font-awesome{
+    width: 50%;
+    margin: 80px 0px 35px 0px;
+    float: left;
+}
+#facebook{
+    color: white;
+    padding: 0px 1%;
+    margin: 0px 1% 0px 72%;
+    float: left;
+}
+#facebook:hover{
+    color: #5144a0;
+}
+#twitter{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+}
+#twitter:hover{
+    color: #5144a0;
+}
+#linkedin{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+}#linkedin:hover{
+    color: #5144a0;
+}
+#youtube{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+}
+#youtube:hover{
+    color: #5144a0;
+}
+#instagram{
+    color: white;
+    padding: 0px 1%;
+    margin-right: 1%; 
+    float: left;
+}
+#instagram:hover{
+    color: #5144a0;
+}#scroll-to-button{
+    width: 3%;
+    height: 40px;
+    margin: 0px 0px 30px 95%;
+    padding-top: 5px;
+    color: #a4a3aa;
+    font-size: 25px;
+    background-color: transparent;
+    border: 2px solid #a4a3aa;
+}
+#scroll-to-button:hover{
+    color: white;
+    border-color: white;
+}
